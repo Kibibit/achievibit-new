@@ -1,6 +1,6 @@
 {
   "name": "@kibibit/achievibit",
-  "version": "2.0.0-development",
+  "version": "0.0.0-development",
   "description": "Github Gamification - Achievements system as a GitHub WebHook",
   "author": "neilkalman@gmail.com",
   "license": "MIT",
@@ -33,6 +33,11 @@
     "@commitlint/cli": "^7.2.1",
     "@commitlint/config-angular": "^7.1.2",
     "@nestjs/testing": "^5.1.0",
+    "@semantic-release/commit-analyzer": "^6.1.0",
+    "@semantic-release/git": "^7.0.5",
+    "@semantic-release/github": "^5.2.1",
+    "@semantic-release/npm": "^5.1.1",
+    "@semantic-release/release-notes-generator": "^7.1.4",
     "@types/express": "^4.16.0",
     "@types/jest": "^23.3.1",
     "@types/node": "^10.7.1",
@@ -44,7 +49,9 @@
     "nodemon": "^1.18.3",
     "prettier": "^1.14.2",
     "rimraf": "^2.6.2",
+    "semantic-release": "^15.10.8",
     "supertest": "^3.1.0",
+    "travis-deploy-once": "^5.0.9",
     "ts-jest": "^23.1.3",
     "ts-loader": "^4.4.2",
     "ts-node": "^7.0.1",
@@ -52,9 +59,26 @@
     "tslint": "5.11.0",
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0",
-    "webpack-node-externals": "^1.7.2",
-    "travis-deploy-once": "^5.0.9",
-    "semantic-release": "^15.10.8"
+    "webpack-node-externals": "^1.7.2"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "dist/**/*.{js,css}",
+            "docs",
+            "package.json"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ],
+      "@semantic-release/github",
+      "@semantic-release/npm"
+    ]
   },
   "husky": {
     "hooks": {

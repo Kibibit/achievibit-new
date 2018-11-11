@@ -26,6 +26,7 @@
         "member-ordering": [
             false
         ],
+        "trailing-comma": [true, {"multiline": "never", "singleline": "never"}],
         "curly": false,
         "interface-name": [
             false

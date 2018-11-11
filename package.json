@@ -5,8 +5,8 @@
   "author": "neilkalman@gmail.com",
   "license": "MIT",
   "scripts": {
-    "format": "prettier --write \"src/**/*.ts\"",
-    "start": "ts-node -r tsconfig-paths/register src/main.ts",
+    "format": "prettier --write \"src/server/**/*.ts\"",
+    "start": "ts-node -r tsconfig-paths/register src/server/main.ts",
     "start:dev": "nodemon",
     "start:debug": "nodemon --config nodemon-debug.json",
     "prestart:prod": "rimraf dist && tsc",
@@ -87,7 +87,7 @@
       "json",
       "ts"
     ],
-    "rootDir": "src",
+    "rootDir": "src/server",
     "testRegex": ".spec.ts$",
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"

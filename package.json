@@ -1,6 +1,6 @@
 {
-  "name": "achievibit",
-  "version": "2.0.0",
+  "name": "@kibibit/achievibit",
+  "version": "2.0.0-development",
   "description": "Github Gamification - Achievements system as a GitHub WebHook",
   "author": "neilkalman@gmail.com",
   "license": "MIT",
@@ -18,7 +18,9 @@
     "test:cov": "jest --coverage",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "webpack": "webpack --config webpack.config.js",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "@nestjs/common": "^5.1.0",
@@ -50,12 +52,14 @@
     "tslint": "5.11.0",
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0",
-    "webpack-node-externals": "^1.7.2"
+    "webpack-node-externals": "^1.7.2",
+    "travis-deploy-once": "^5.0.9",
+    "semantic-release": "^15.10.8"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }  
+    }
   },
   "jest": {
     "moduleFileExtensions": [
@@ -75,5 +79,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kibibit/achievibit-new.git"
   }
 }

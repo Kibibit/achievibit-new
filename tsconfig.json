@@ -11,7 +11,15 @@
     "target": "es6",
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./src/server"
+    "baseUrl": "./src/server",
+    "paths": {
+      "@achievibit.modules": ["modules/database"],
+      "@achievibit.database": ["modules/database"],
+      "@achievibit.config": ["modules/config"],
+      "@achievibit.events": ["modules/events"],
+      "@shared/*": ["../shared/*"],
+      "@achievibit/*": ["*/"]
+    }
   },
   "include": [
     "src/server/**/*"

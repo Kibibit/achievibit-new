@@ -21,7 +21,7 @@
     "commit": "git-cz",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release",
-    "coveralls": "npm run test:cov && cat ./coverage/lcov.info | coveralls | coveralls"
+    "coveralls": "npm run test:cov && cat ./coverage/lcov.info | coveralls"
   },
   "dependencies": {
     "@nestjs/common": "^5.1.0",

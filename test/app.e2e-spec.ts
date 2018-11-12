@@ -8,16 +8,12 @@ describe('AppController (e2e)', () => {
 
   beforeAll(async () => {
     const moduleFixture = await Test.createTestingModule({
-      imports: [AppModule],
+      imports: [AppModule]
     }).compile();
-
-// hello
-
 
     app = moduleFixture.createNestApplication();
     await app.init();
   });
-  
 
   it('/ (GET)', () => {
     return request(app.getHttpServer())

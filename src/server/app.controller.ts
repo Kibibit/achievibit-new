@@ -9,9 +9,4 @@ export class AppController {
   root(): string {
     return this.appService.root();
   }
-
-  @Get('/test-coveralls')
-  coveralls(): string {
-    return 'this is not covered';
-  }
 }

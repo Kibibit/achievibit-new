@@ -1,5 +1,10 @@
 # achievibit rewrite
 
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![Build Status](https://travis-ci.org/Kibibit/achievibit-new.svg?branch=master)](https://travis-ci.org/Kibibit/achievibit-new)
+[![Coverage Status](https://coveralls.io/repos/github/Kibibit/achievibit-new/badge.svg)](https://coveralls.io/github/Kibibit/achievibit-new)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6ede30ddc2d84311b420dd661aca5f4b)](https://www.codacy.com/app/neilkalman/achievibit-new?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Kibibit/achievibit-new&amp;utm_campaign=Badge_Grade)
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.

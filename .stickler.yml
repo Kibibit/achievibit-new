@@ -1,4 +1,0 @@
----
-linters:
-    tslint:
-        config: tslint.json

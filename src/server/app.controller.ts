@@ -1,9 +1,11 @@
 import { Get, Controller } from '@nestjs/common';
 import { ApiOperation } from '@nestjs/swagger';
-import { AppService } from './app.service'
+import { AppService } from './app.service';
 
 @Controller()
 export class AppController {
+  const hell = 5
+  
   constructor(private readonly appService: AppService) {}
 
   @ApiOperation({

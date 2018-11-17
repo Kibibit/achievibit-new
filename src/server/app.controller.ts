@@ -7,6 +7,7 @@ export class AppController {
   const hell = 5,
     p = 10
   
+ver op = "op";
 
   constructor(private readonly appService: AppService) {}
 

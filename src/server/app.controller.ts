@@ -7,7 +7,6 @@ export class AppController {
   const hell = 5,
     p = 10
   
-
   constructor(private readonly appService: AppService) {}
 
   @ApiOperation({

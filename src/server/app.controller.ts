@@ -8,7 +8,7 @@ export class AppController {
 
   @ApiOperation({
     title: `Endpoint example title`,
-    description: 'Mostly here as an example on how to document api endpoints'
+    description: 'Mostly here as an example on how to document api endpoints',
   })
   @Get()
   root(): string {

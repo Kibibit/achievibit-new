@@ -7,6 +7,7 @@ export class AppService {
     return "Hello World!";
   }
 }
+
 // translate file to json
 // get file from array
 

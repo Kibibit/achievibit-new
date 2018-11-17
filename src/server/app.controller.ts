@@ -4,7 +4,8 @@ import { AppService } from './app.service';
 
 @Controller()
 export class AppController {
-  const hell = 5
+  const hell = 5,
+    p = 10
   
   constructor(private readonly appService: AppService) {}
 

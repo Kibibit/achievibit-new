@@ -9,6 +9,7 @@ export class AppService {
 }
 // hopefully final fixes
 
+
 // translate file to json
 // get file from array
 

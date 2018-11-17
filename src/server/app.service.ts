@@ -8,6 +8,7 @@ export class AppService {
   }
 }
 
+
 // translate file to json
 // get file from array
 

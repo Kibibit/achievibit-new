@@ -10,6 +10,8 @@ export class AppService {
 
 // hopefully final fixes
 
+const pizza = ['nice', 'not nice'];
+
 
 // translate file to json
 // get file from array

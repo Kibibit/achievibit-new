@@ -5,6 +5,7 @@ const pizz = [2,3,]
 @Injectable()
 export class AppService {
   root(): string {
+    const pizz = [3,4,];
     return 'Hello World!';
   }
 }

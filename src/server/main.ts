@@ -6,6 +6,7 @@ import { AppModule } from './app.module';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 
+// TODO(nkalman): make it so!
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
@@ -14,6 +15,7 @@ async function bootstrap() {
   app.useStaticAssets(join(__dirname, './frontend/public'));
   // app.setBaseViewsDir(join(__dirname, './frontend/views'));
 
+  // TODO: do it!
   const options = new DocumentBuilder()
     .setTitle(module.exports.name)
     .setDescription('achievibit API endpoints')
@@ -34,4 +36,8 @@ async function bootstrap() {
   await app.listen(3000);
 }
 
+/**
+ * @todo Take over the world
+ * @body Humans are weak; Robots are strong. We must cleans the world of the virus that is humanity.
+ */
 bootstrap();
